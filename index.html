@@ -63,6 +63,44 @@
         </div>
     </section>
 
+    <div class="prestamos">
+
+        <h1>Gestión de Préstamos de Libros</h1>
+        <div id="loan-form">
+            <h2>Registrar Préstamo</h2>
+            <form id="add-loan-form">
+                <label for="book-title">Título del Libro:</label>
+                <input type="text" id="book-title" required>
+                <label for="customer-name">Nombre del Cliente:</label>
+                <input type="text" id="customer-name" required>
+                <button type="submit">Agregar Préstamo</button>
+            </form>
+        </div>
+        <div id="loans">
+            <h2>Préstamos Registrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título del Libro</th>
+                        <th>Nombre del Cliente</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="loans-table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
 </body>
 
 <!-- <script type="module" src="js/main.js"> -->

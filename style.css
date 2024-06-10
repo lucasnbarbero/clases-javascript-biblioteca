@@ -5,7 +5,7 @@ body {
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 }
 
-.form_container, .registeredGuests_container {
+.form_container, .registeredUsers_container {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,15 +1,15 @@
-import { Database } from "./db.js";
+import { Database } from "../db.js";
 
 const STORE_NAME = "users";
 
 export class UserManager {
 
     static async addUser(user) {
-        return Database.openDB().then((db) => {
+        return Database.openDB(STORE_NAME).then((db) => {
           return new Promise((resolve, reject) => {
             const transaction = db.transaction([STORE_NAME], "readwrite");
             const store = transaction.objectStore(STORE_NAME);
-            const request = store.add(task);
+            const request = store.add(user);
     
             request.onsuccess = () => {
               resolve();
@@ -23,7 +23,7 @@ export class UserManager {
       }
 
      static async getAllUsers() {
-        return Database.openDB().then((db) => {
+        return Database.openDB(STORE_NAME).then((db) => {
             // Retorna una nueva promesa para manejar la asincronía de la operación
             return new Promise((resolve, reject) => {
               // Inicia una transacción de solo lectura en el almacén de objetos STORE_NAME

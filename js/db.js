@@ -1,12 +1,12 @@
 export const DB_NAME = "Bokings";
 
-export const STORE_NAME = "guests";
+// const STORE_NAME = "guests";
 
 export const DB_VERSION = 1;
 
 export class Database {
 
-    static openDB() {
+    static openDB(STORE_NAME) {
         return new Promise((resolve, reject) => {
           const request = indexedDB.open(DB_NAME, DB_VERSION);
     

@@ -10,35 +10,21 @@
 
 <body>
     <section class="form_container">
-        <h3> Reservas Alojamiento Phoenix</h3>
-        <form id="guestRegistration">
+        <h3> Crear usuario</h3>
+        <form id="userRegistration">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" required>
 
             <label for="lname">Apellido</label>
             <input type="text" id="lname" name="lname" required>
 
-            <label for="tel">Teléfono</label>
-            <input type="tel" id="tel" name="tel" required>
-
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="bookedDays">Cantidad de días de estadía</label>
-            <input type="number" min="1" id="bookedDays" name="bookedDays" required>
+            <label for="membership">Numero de socio</label>
+            <input type="number" id="membership" name="membership" required>
 
-            <fieldset>
-                <legend> Tipo de habitación </legend>
-
-                <input type="radio" id="html" name="room" value="individual" checked>
-                <label for="html">Individual</label>
-                <input type="radio" id="css" name="room" value="doble">
-                <label for="css">Doble</label>
-                <input type="radio" id="javascript" name="room" value="suite">
-                <label for="javascript">Suite</label>
-            </fieldset>
-
-            <input id="registerButton" type="submit" value="Registrar huésped">
+            <input id="registerButton" type="submit" value="Registrar usuario">
           </form>
     </section>
 

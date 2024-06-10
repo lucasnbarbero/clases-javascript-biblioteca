@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=º, initial-scale=1.0">
+    <title>Reservas para el Alojamiento Phoenix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="form_container">
+        <h3> Reservas Alojamiento Phoenix</h3>
+        <form id="guestRegistration">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="bookedDays">Cantidad de días de estadía</label>
+            <input type="number" min="1" id="bookedDays" name="bookedDays" required>
+
+            <fieldset>
+                <legend> Tipo de habitación </legend>
+
+                <input type="radio" id="html" name="room" value="individual" checked>
+                <label for="html">Individual</label>
+                <input type="radio" id="css" name="room" value="doble">
+                <label for="css">Doble</label>
+                <input type="radio" id="javascript" name="room" value="suite">
+                <label for="javascript">Suite</label>
+            </fieldset>
+
+            <input id="registerButton" type="submit" value="Registrar huésped">
+          </form>
+          
+    </section>
+
+
+    <section class="registeredGuests_container">
+        <h3>Húespedes</h3>
+        <div class="booksRegistered">
+            <table id="guestTable">
+                <thead >
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Estadía (días)</th>
+                    <th>Habitación reservada</th>
+                    <th>Precio total</th>
+                </thead>
+                <tbody> 
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+<!-- <script type="module" src="js/main.js"> -->
+
+</script>
+
+</html>
